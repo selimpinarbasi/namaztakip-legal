@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NamazTakip - Gizlilik Politikası / Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: #111827; line-height: 1.6; }
+        .wrapper { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.5rem; }
+        .brand { display: flex; align-items: center; gap: 0.75rem; }
+        .logo { width: 40px; height: 40px; border-radius: 10px; }
+        .brand span { font-size: 1.125rem; font-weight: 600; }
+        .lang-btn { display: flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.75rem; border: 1px solid #d1d5db; border-radius: 8px; background: none; font-size: 0.875rem; color: #4b5563; cursor: pointer; transition: background 0.2s; }
+        .lang-btn:hover { background: #f3f4f6; }
+        h1 { font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .date { font-size: 0.875rem; color: #6b7280; margin-bottom: 2.5rem; }
+        .section { margin-bottom: 2rem; }
+        .section h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .section p { color: #374151; white-space: pre-line; }
+        .footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e5e7eb; text-align: center; font-size: 0.875rem; color: #6b7280; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="brand">
+                <img src="logo.png" alt="NamazTakip" class="logo">
+                <span>NamazTakip</span>
+            </div>
+            <button class="lang-btn" onclick="toggleLang()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span id="langLabel">English</span>
+            </button>
+        </div>
+
+        <!-- Turkish -->
+        <div id="tr">
+            <h1>Gizlilik Politikasi</h1>
+            <p class="date">Son guncelleme: 8 Subat 2026</p>
+
+            <div class="section">
+                <h2>1. Toplanan Veriler</h2>
+                <p>NamazTakip uygulamasi asagidaki verileri toplar:
+
+&#8226; Cihaz Kimligi (Device ID): Uygulamanin duzgun calismasi ve kullanici verilerinizin korunmasi icin benzersiz bir cihaz kimligi olusturulur ve Keychain'de guvenli sekilde saklanir.
+&#8226; Konum Bilgisi: Namaz vakitlerinin dogru hesaplanmasi ve kible yonunun belirlenmesi icin konum izniniz dahilinde kullanilir. Konum verisi sunucularimiza kaydedilebilir.
+&#8226; Namaz Kayitlari: Gunluk namaz takip verileriniz hesabinizla iliskili olarak saklanir.
+&#8226; Bildirim Tercihleri: Namaz vakti bildirim ayarlariniz saklanir.
+&#8226; Giris Bilgileri: Apple veya Google ile giris yaparsaniz, saglayici tarafindan verilen kimlik bilgileri saklanir. Sifreniz saklanmaz.
+&#8226; Geri Bildirim: Gonderdiginiz hata raporlari ve iletisim mesajlari cihaz kimliginizle birlikte saklanir.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Verilerin Kullanim Amaci</h2>
+                <p>Toplanan veriler asagidaki amaclarla kullanilir:
+
+&#8226; Namaz vakitlerinin dogru hesaplanmasi
+&#8226; Kible yonunun belirlenmesi
+&#8226; Namaz takip istatistiklerinin olusturulmasi
+&#8226; Push bildirimlerinin gonderilmesi
+&#8226; Uygulama performansinin iyilestirilmesi
+&#8226; Kullanici destek taleplerinin yanitlanmasi</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Ucuncu Taraf Hizmetler</h2>
+                <p>Uygulamamiz asagidaki ucuncu taraf hizmetleri kullanmaktadir:
+
+&#8226; Supabase: Veritabani ve kullanici yonetimi (https://supabase.com/privacy)
+&#8226; Firebase Cloud Messaging: Push bildirimleri (https://firebase.google.com/support/privacy)
+&#8226; Google AdMob: Reklam gosterimi (ucretsiz kullanicilar icin) (https://policies.google.com/privacy)
+&#8226; RevenueCat: Abonelik yonetimi (https://www.revenuecat.com/privacy)
+&#8226; Apple Sign In / Google Sign In: Kimlik dogrulama
+
+Bu hizmetlerin kendi gizlilik politikalari gecerlidir.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Veri Saklama ve Guvenlik</h2>
+                <p>&#8226; Verileriniz Supabase altyapisinda sifreli olarak saklanir.
+&#8226; Row Level Security (RLS) ile her kullanici yalnizca kendi verilerine erisebilir.
+&#8226; Cihaz kimliginiz Keychain'de guvenli sekilde saklanir.
+&#8226; Iletisim ve hata raporlari belirli bir sure sonra otomatik olarak silinir.
+&#8226; Hesabinizi silmek isterseniz uygulama ici iletisim formu veya asagidaki e-posta adresi uzerinden talepte bulunabilirsiniz.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Cocuklarin Gizliligi</h2>
+                <p>NamazTakip, 4+ yas grubuna uygundur. 13 yasin altindaki cocuklardan bilerek kisisel veri toplamayiz. Ebeveynler veya veliler, cocuklarinin veri paylasimi konusunda endiseleri varsa bizimle iletisime gecebilir.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. KVKK ve GDPR Uyumu</h2>
+                <p>Turkiye'de yururlukte olan Kisisel Verilerin Korunmasi Kanunu (KVKK) ve Avrupa Birligi Genel Veri Koruma Tuzugu (GDPR) kapsaminda:
+
+&#8226; Verilerinize erisim talep edebilirsiniz.
+&#8226; Verilerinizin duzeltilmesini veya silinmesini isteyebilirsiniz.
+&#8226; Veri isleme faaliyetlerine itiraz edebilirsiniz.
+&#8226; Verilerinizin tasinabilirligini talep edebilirsiniz.
+
+Bu haklarinizi kullanmak icin asagidaki iletisim bilgilerinden bize ulasabilirsiniz.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Degisiklikler</h2>
+                <p>Bu gizlilik politikasi zaman zaman guncellenebilir. Onemli degisiklikler uygulama ici bildirim ile duyurulacaktir.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Iletisim</h2>
+                <p>Gizlilik politikamiz hakkinda sorulariniz icin:
+
+E-posta: selimpinarbasi@gmail.com
+Uygulama ici: Diger > Iletisim</p>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="hidden">
+            <h1>Privacy Policy</h1>
+            <p class="date">Last updated: February 8, 2026</p>
+
+            <div class="section">
+                <h2>1. Data We Collect</h2>
+                <p>NamazTakip collects the following data:
+
+&#8226; Device ID: A unique device identifier is generated and securely stored in Keychain for proper app functionality and data protection.
+&#8226; Location Data: Used with your permission to calculate accurate prayer times and determine Qibla direction. Location data may be saved to our servers.
+&#8226; Prayer Records: Your daily prayer tracking data is stored in association with your account.
+&#8226; Notification Preferences: Your prayer time notification settings are stored.
+&#8226; Sign-In Information: If you sign in with Apple or Google, the provider-issued credentials are stored. Your password is never stored.
+&#8226; Feedback: Bug reports and contact messages you submit are stored along with your device ID.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. How We Use Your Data</h2>
+                <p>Collected data is used for the following purposes:
+
+&#8226; Calculating accurate prayer times
+&#8226; Determining Qibla direction
+&#8226; Generating prayer tracking statistics
+&#8226; Sending push notifications
+&#8226; Improving app performance
+&#8226; Responding to user support requests</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Third-Party Services</h2>
+                <p>Our app uses the following third-party services:
+
+&#8226; Supabase: Database and user management (https://supabase.com/privacy)
+&#8226; Firebase Cloud Messaging: Push notifications (https://firebase.google.com/support/privacy)
+&#8226; Google AdMob: Ad serving for free users (https://policies.google.com/privacy)
+&#8226; RevenueCat: Subscription management (https://www.revenuecat.com/privacy)
+&#8226; Apple Sign In / Google Sign In: Authentication
+
+These services have their own privacy policies.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Storage and Security</h2>
+                <p>&#8226; Your data is stored encrypted on Supabase infrastructure.
+&#8226; Row Level Security (RLS) ensures each user can only access their own data.
+&#8226; Your device ID is securely stored in Keychain.
+&#8226; Contact messages and bug reports are automatically deleted after a certain period.
+&#8226; To delete your account, you can submit a request through the in-app contact form or via the email address below.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Children's Privacy</h2>
+                <p>NamazTakip is rated 4+. We do not knowingly collect personal data from children under 13. Parents or guardians who have concerns about their children's data sharing can contact us.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. KVKK and GDPR Compliance</h2>
+                <p>Under the Turkish Personal Data Protection Law (KVKK) and the EU General Data Protection Regulation (GDPR):
+
+&#8226; You can request access to your data.
+&#8226; You can request correction or deletion of your data.
+&#8226; You can object to data processing activities.
+&#8226; You can request data portability.
+
+To exercise these rights, please contact us using the information below.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Changes</h2>
+                <p>This privacy policy may be updated from time to time. Significant changes will be announced through in-app notifications.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Contact</h2>
+                <p>For questions about our privacy policy:
+
+Email: selimpinarbasi@gmail.com
+In-app: More > Contact</p>
+            </div>
+        </div>
+
+        <div class="footer">&copy; 2026 NamazTakip</div>
+    </div>
+
+    <script>
+        let currentLang = 'tr';
+        function toggleLang() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            document.getElementById('tr').classList.toggle('hidden');
+            document.getElementById('en').classList.toggle('hidden');
+            document.getElementById('langLabel').textContent = currentLang === 'tr' ? 'English' : 'Turkce';
+            document.documentElement.lang = currentLang;
+        }
+    </script>
+</body>
+</html>

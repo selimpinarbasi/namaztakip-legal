@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NamazTakip - Destek / Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: #111827; line-height: 1.6; }
+        .wrapper { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.5rem; }
+        .brand { display: flex; align-items: center; gap: 0.75rem; }
+        .logo { width: 40px; height: 40px; border-radius: 10px; }
+        .brand span { font-size: 1.125rem; font-weight: 600; }
+        .lang-btn { display: flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.75rem; border: 1px solid #d1d5db; border-radius: 8px; background: none; font-size: 0.875rem; color: #4b5563; cursor: pointer; transition: background 0.2s; }
+        .lang-btn:hover { background: #f3f4f6; }
+        h1 { font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 0.875rem; color: #6b7280; margin-bottom: 2.5rem; }
+        .card { background: #f9fafb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .card-header h2 { font-size: 1.25rem; font-weight: 600; }
+        .icon { width: 24px; height: 24px; }
+        .icon-red { color: #ef4444; }
+        .icon-blue { color: #3b82f6; }
+        .icon-amber { color: #f59e0b; }
+        .card p { color: #374151; white-space: pre-line; }
+        .contact-card { background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 12px; padding: 1.5rem; margin-top: 2.5rem; }
+        .contact-card h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .contact-card p { color: #374151; margin-bottom: 0.5rem; }
+        .contact-card .note { font-size: 0.875rem; color: #6b7280; margin-top: 1rem; }
+        .privacy-link { text-align: center; margin-top: 2rem; }
+        .privacy-link a { color: #1e6b45; font-size: 0.875rem; }
+        .footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e5e7eb; text-align: center; font-size: 0.875rem; color: #6b7280; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="brand">
+                <img src="logo.png" alt="NamazTakip" class="logo">
+                <span>NamazTakip</span>
+            </div>
+            <button class="lang-btn" onclick="toggleLang()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span id="langLabel">English</span>
+            </button>
+        </div>
+
+        <!-- Turkish -->
+        <div id="tr">
+            <h1>Destek</h1>
+            <p class="subtitle">NamazTakip ile ilgili yardim ve iletisim</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <h2>Hata Bildirimi</h2>
+                </div>
+                <p>Uygulamada bir hata ile karsilastiysaniz, uygulama icindeki "Diger > Iletisim > Hata Bildir" bolumunden detayli bilgi gondererek bize ulasabilirsiniz. Ekran goruntusu eklemek sorunu daha hizli cozmemize yardimci olur.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <h2>Genel Iletisim</h2>
+                </div>
+                <p>Oneri, istek veya genel sorulariniz icin uygulama ici iletisim formunu kullanabilir ya da dogrudan e-posta gonderebilirsiniz.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <h2>Sikca Sorulan Sorular</h2>
+                </div>
+                <p><strong>Namaz vakitleri neden farkli gosteriliyor?</strong>
+Uygulama, konumunuza gore vakitleri hesaplar. Konum izni verilmemisse varsayilan konum kullanilir. Ayarlardan konum iznini kontrol edebilirsiniz.
+
+<strong>Premium aboneligi nasil iptal edebilirim?</strong>
+iPhone Ayarlari > Apple Kimligi > Abonelikler bolumunden iptal edebilirsiniz.
+
+<strong>Hesabimi nasil silebilirim?</strong>
+Uygulama ici iletisim formundan veya asagidaki e-posta adresi uzerinden hesap silme talebinde bulunabilirsiniz. Talebiniz en gec 7 is gunu icinde isleme alinir.</p>
+            </div>
+
+            <div class="contact-card">
+                <h2>
+                    <svg class="icon" style="color:#1e6b45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Bize Ulasin
+                </h2>
+                <p>E-posta: selimpinarbasi@gmail.com</p>
+                <p>Uygulama ici: Diger > Iletisim</p>
+                <p class="note">Mesajlariniza genellikle 24-48 saat icinde yanit veriyoruz.</p>
+            </div>
+
+            <div class="privacy-link">
+                <a href="privacy.html">Gizlilik Politikasi</a>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="hidden">
+            <h1>Support</h1>
+            <p class="subtitle">Help and contact for NamazTakip</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <h2>Bug Reports</h2>
+                </div>
+                <p>If you encounter a bug in the app, you can reach us through "More > Contact > Report Bug" within the app. Attaching a screenshot helps us resolve the issue faster.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <h2>General Contact</h2>
+                </div>
+                <p>For suggestions, requests, or general questions, you can use the in-app contact form or send us an email directly.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <svg class="icon icon-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <p><strong>Why are prayer times showing differently?</strong>
+The app calculates times based on your location. If location permission is not granted, a default location is used. You can check location permission in Settings.
+
+<strong>How can I cancel my Premium subscription?</strong>
+You can cancel through iPhone Settings > Apple ID > Subscriptions.
+
+<strong>How can I delete my account?</strong>
+You can request account deletion through the in-app contact form or via the email address below. Your request will be processed within 7 business days.</p>
+            </div>
+
+            <div class="contact-card">
+                <h2>
+                    <svg class="icon" style="color:#1e6b45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Contact Us
+                </h2>
+                <p>Email: selimpinarbasi@gmail.com</p>
+                <p>In-app: More > Contact</p>
+                <p class="note">We typically respond to messages within 24-48 hours.</p>
+            </div>
+
+            <div class="privacy-link">
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="footer">&copy; 2026 NamazTakip</div>
+    </div>
+
+    <script>
+        let currentLang = 'tr';
+        function toggleLang() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            document.getElementById('tr').classList.toggle('hidden');
+            document.getElementById('en').classList.toggle('hidden');
+            document.getElementById('langLabel').textContent = currentLang === 'tr' ? 'English' : 'Turkce';
+            document.documentElement.lang = currentLang;
+        }
+    </script>
+</body>
+</html>
